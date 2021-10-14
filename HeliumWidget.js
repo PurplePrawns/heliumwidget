@@ -2,7 +2,7 @@
 // These must be at the very top of the file. Do not edit.
 // icon-color: light-brown; icon-glyph: magic;
 /* --------------------------------------------------------------
-Script: miner.js
+Script: heliumminer.js
 Author: PurplePrawns
 Version: 1.0.0
 Description:
