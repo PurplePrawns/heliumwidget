@@ -14,4 +14,6 @@ If you found this useful, consider dropping a spare coin or HNT dust for a coffe
 
 HNT Wallet:  14AsruyJmimZeRJLCdCn1yrhHdCAbGrdze3ukBuWhL8vmrLHEDo
 
+NOTE: The Helium API is (as of this writing), notoriously slow. May times it will return {"error":"Too Busy"}. The widget isn't broken, it's Helium.
+
 Enjoy!
