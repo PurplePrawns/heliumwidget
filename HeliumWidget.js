@@ -18,17 +18,17 @@ const address = 'YOURWALLETADDRESS'
 
 /// CONFIG
 // This block is when CURSOR is needed to request. Need some intelligence handling.
-// const acctactivityreq = new Request('https://api.helium.io/v1/accounts/' + address + '/activity')
-// const acctactivityres = await acctactivityreq.loadJSON()
-// const acctactivitycursor = acctactivityres.cursor
-// const acctactivityreqclean = new Request('https://api.helium.io/v1/accounts/' + address + '/activity?cursor=' + acctactivitycursor)
-// const acctactivityresclean = await acctactivityreqclean.loadJSON()
-// const acctactivitytime = acctactivityresclean.data[0].time
+ const acctactivityreq = new Request('https://api.helium.io/v1/accounts/' + address + '/activity')
+ const acctactivityres = await acctactivityreq.loadJSON()
+ const acctactivitycursor = acctactivityres.cursor
+ const acctactivityreqclean = new Request('https://api.helium.io/v1/accounts/' + address + '/activity?cursor=' + acctactivitycursor)
+ const acctactivityresclean = await acctactivityreqclean.loadJSON()
+ const acctactivitytime = acctactivityresclean.data[0].time
 
 // This block is when CURSOR is NOT needed to request. Need some intelligence handling.
-const acctactivityreqclean = new Request('https://api.helium.io/v1/accounts/' + address + '/activity')
-const acctactivityresclean = await acctactivityreqclean.loadJSON()
-const acctactivitytime = acctactivityresclean.data[0].time
+// const acctactivityreqclean = new Request('https://api.helium.io/v1/accounts/' + address + '/activity')
+// const acctactivityresclean = await acctactivityreqclean.loadJSON()
+// const acctactivitytime = acctactivityresclean.data[0].time
 
 const hntfract = 100000000
 const hntaccturl = 'https://api.helium.io/v1/accounts/' + address
